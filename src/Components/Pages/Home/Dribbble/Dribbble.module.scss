@@ -1,0 +1,33 @@
+.Dribbble {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10rem 0 0 0;
+}
+
+.Info {
+  padding-top: 5rem;
+  h2 {
+    width: 13ch;
+  }
+  p {
+    width: 350px;
+  }
+}
+
+.DribbbleImages {
+  display: flex;
+  flex-flow: nowrap;
+  flex-shrink: 2;
+}
+.Featured {
+  margin: 0.5rem;
+  flex-shrink: 2;
+}
+.ImageColumn {
+  display: flex;
+  flex-direction: column;
+  width: 351px;
+  img {
+    margin: 0.5rem 0.6rem;
+  }
+}

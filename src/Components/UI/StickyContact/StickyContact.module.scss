@@ -9,11 +9,12 @@
   color: white;
   svg {
     opacity: 0.4;
-    padding: 10px 0;
+    padding: 20px 0;
     transition: 0.2s all ease-in;
     font-size: 1.5rem;
     &:hover {
       opacity: 1;
+      color: var(--flatRed);
     }
   }
 }

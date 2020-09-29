@@ -15,10 +15,13 @@
   h5 {
     font-weight: 100;
     color: var(--softWhite);
-
     font-size: var(--text-xl);
     opacity: 0.4;
     transition: 0.2s all ease-in;
+    a {
+      color: var(--softWhite);
+      text-decoration: none;
+    }
     &:hover {
       opacity: 1;
       transition: 0.2s all ease-in;
