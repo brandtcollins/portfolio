@@ -1,0 +1,19 @@
+.Contact {
+  z-index: 100;
+  position: fixed;
+  margin: 0 0 0 2rem;
+  width: 25px;
+  bottom: 2rem;
+  left: 16px;
+  color: var(--softWhite);
+  color: white;
+  svg {
+    opacity: 0.4;
+    padding: 10px 0;
+    transition: 0.2s all ease-in;
+    font-size: 1.5rem;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

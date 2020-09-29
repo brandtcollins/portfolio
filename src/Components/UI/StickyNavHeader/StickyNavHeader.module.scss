@@ -1,5 +1,4 @@
 .StickyNav {
-  height: 100vh;
   width: 100vw;
   position: fixed;
   z-index: 100;
@@ -9,11 +8,14 @@
 }
 
 .StickyNavHeader {
+  color: var(--softWhite);
   display: flex;
   margin: 2rem 2rem 0 2rem;
   font-family: var(--font-quaternary);
   h5 {
     font-weight: 100;
+    color: var(--softWhite);
+
     font-size: var(--text-xl);
     opacity: 0.4;
     transition: 0.2s all ease-in;
@@ -38,24 +40,6 @@
         opacity: 1;
         color: var(--flatRed);
       }
-    }
-  }
-}
-
-.Contact {
-  z-index: 100;
-  position: absolute;
-  margin: 0 0 0 2rem;
-  width: 25px;
-  bottom: 2rem;
-  left: 16px;
-  color: var(--softWhite);
-  color: white;
-  svg {
-    opacity: 0.4;
-    padding: 10px 0;
-    &:hover {
-      opacity: 1;
     }
   }
 }

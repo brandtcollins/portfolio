@@ -6,7 +6,20 @@
   justify-content: center;
   align-items: center;
   p {
-    max-width: 650px;
+    max-width: 720px;
     text-align: center;
+  }
+}
+
+.Projects {
+  text-align: center;
+  color: var(--flatRed);
+}
+
+.ProjectGallery {
+  display: flex;
+  margin: 5rem 0 0 0;
+  div {
+    margin: 0 1rem;
   }
 }

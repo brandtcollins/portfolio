@@ -1,0 +1,23 @@
+.Skills {
+  padding-top: 15rem;
+  margin: 0 0 10rem 0;
+  p {
+    margin: 2rem 0 4rem 0;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    li {
+      font-size: var(--text-sm);
+      font-weight: bold;
+      flex: 1 0 21%;
+      margin: 0.75rem 0;
+      svg {
+        vertical-align: -2px;
+        color: #c6c6c6;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}

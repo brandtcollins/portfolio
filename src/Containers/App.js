@@ -1,16 +1,20 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import Home from "../Components/Pages/Home/Home";
 import Sonder from "../Components/Pages/Projects/Sonder/Sonder";
-import StickyNav from "../Components/UI/StickyNav/StickyNav";
+import Footer from "../Components/Footer/Footer";
+import StickyNavHeader from "../Components/UI/StickyNavHeader/StickyNavHeader";
+import StickyContact from "../Components/UI/StickyContact/StickyContact";
 
 function App() {
   return (
     <BrowserRouter>
-      <StickyNav />
+      <StickyNavHeader />
+      <StickyContact />
       <Route path="/" component={Home} exact />
-      {/* <Route path="/projects/Sonder" component={Sonder} /> */}
+      <Route path="/projects/Sonder" component={Sonder} />
+      <Footer />
     </BrowserRouter>
   );
 }

@@ -1,11 +1,11 @@
-.Background {
-  height: 100vh;
+.BackgroundImage {
   background-image: url("/images/lake-eola.jpeg");
   background-size: cover;
   opacity: 25%;
   width: 100vw;
+  height: 100vh;
   position: fixed;
-  z-index: -100;
+  z-index: -20;
   left: 0;
   top: 0;
 }
