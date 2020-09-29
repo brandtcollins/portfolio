@@ -1,0 +1,24 @@
+body {
+  background-color: var(--lightGray);
+  color: var(--flatDarkBlue);
+  transition: 0.3s all ease-in-out;
+  transition: 1s background-position ease-in-out;
+  background-image: url("/images/backgroundPattern-light.svg");
+  background-position: 10%;
+
+  h1 {
+    color: var(--flatRed);
+  }
+
+  a {
+    transition: 0.2s all ease-in;
+    padding: 0;
+    &:hover {
+      color: var(--flatRed);
+      transition: 0.2s all ease-in;
+    }
+    span {
+      color: var(--flatRed);
+    }
+  }
+}

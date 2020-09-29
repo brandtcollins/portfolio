@@ -1,0 +1,61 @@
+.StickyNav {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  color: var(--softWhite);
+}
+
+.StickyNavHeader {
+  display: flex;
+  margin: 2rem 2rem 0 2rem;
+  font-family: var(--font-quaternary);
+  h5 {
+    font-weight: 100;
+    font-size: var(--text-xl);
+    opacity: 0.4;
+    transition: 0.2s all ease-in;
+    &:hover {
+      opacity: 1;
+      transition: 0.2s all ease-in;
+    }
+  }
+  span {
+    color: var(--flatRed);
+  }
+  nav {
+    flex-grow: 1;
+    text-align: right;
+    font-weight: 100;
+    a {
+      padding: 0 0.85rem;
+      color: var(--softWhite);
+      text-decoration: none;
+      opacity: 0.4;
+      &:hover {
+        opacity: 1;
+        color: var(--flatRed);
+      }
+    }
+  }
+}
+
+.Contact {
+  z-index: 100;
+  position: absolute;
+  margin: 0 0 0 2rem;
+  width: 25px;
+  bottom: 2rem;
+  left: 16px;
+  color: var(--softWhite);
+  color: white;
+  svg {
+    opacity: 0.4;
+    padding: 10px 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

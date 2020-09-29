@@ -1,0 +1,24 @@
+@import "./colors.scss";
+@import "./typography.scss";
+@import "./spacing.scss";
+@import "./themes.scss";
+
+ul {
+  padding: 0;
+
+  li {
+    list-style: none;
+    padding: 0;
+  }
+  i {
+    margin: 0 1rem 0 0;
+  }
+
+  p {
+    padding: 0;
+  }
+}
+
+.hideScroll {
+  overflow: hidden;
+}

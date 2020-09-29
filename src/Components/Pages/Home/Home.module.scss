@@ -1,0 +1,12 @@
+.Hero {
+  height: 100vh;
+  color: var(--softWhite);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    max-width: 650px;
+    text-align: center;
+  }
+}
