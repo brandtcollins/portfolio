@@ -3,11 +3,14 @@ import ReactDOM from "react-dom";
 import "./styles/global/main.scss";
 import App from "./Containers/App";
 import * as serviceWorker from "./serviceWorker";
+import ScrollContextProvider from "./Context/ScrollContext";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ScrollContextProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </ScrollContextProvider>,
   document.getElementById("root")
 );
 

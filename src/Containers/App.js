@@ -10,10 +10,10 @@ import StickyContact from "../Components/UI/StickyContact/StickyContact";
 function App() {
   return (
     <BrowserRouter>
-      <StickyNavHeader />
-      <StickyContact />
       <Route path="/" component={Home} exact />
       <Route path="/projects/Sonder" component={Sonder} />
+      <StickyNavHeader />
+      <StickyContact />
       <Footer />
     </BrowserRouter>
   );

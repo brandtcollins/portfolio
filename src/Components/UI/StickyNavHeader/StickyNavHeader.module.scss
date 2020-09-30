@@ -52,3 +52,10 @@
     }
   }
 }
+
+.Dark {
+  color: var(--flatDarkBlue);
+  span {
+    color: var(--flatRed);
+  }
+}
