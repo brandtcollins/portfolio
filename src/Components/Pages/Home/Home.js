@@ -6,10 +6,16 @@ import Skills from "./Skills/Skills";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import Hero from "./Hero/Hero";
 import Dribbble from "./Dribbble/Dribbble";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Container>
         <Hero />
       </Container>
@@ -21,7 +27,7 @@ const Home = () => {
         </Container>
         <Background />
       </Body>
-    </>
+    </motion.div>
   );
 };
 

@@ -8,6 +8,7 @@ const DRIBBBLE_KEY = process.env.REACT_APP_DRIBBBLE_KEY;
 
 const Dribbble = () => {
   const [dribbbleShots, updateDribbbleShots] = useState(null);
+  let dribbbleComponent = null;
 
   useEffect(() => {
     const dribbbleFeed = async () => {
@@ -23,8 +24,6 @@ const Dribbble = () => {
     };
     dribbbleFeed();
   }, []);
-
-  let dribbbleComponent = null;
 
   if (dribbbleShots) {
     dribbbleComponent = (

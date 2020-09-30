@@ -1,7 +1,10 @@
 .Dribbble {
   display: flex;
   flex-wrap: nowrap;
-  margin: 10rem 0 0 0;
+  padding: 0 0 10vh 0;
+  @media only screen and (max-width: 945px) {
+    flex-flow: wrap;
+  }
 }
 
 .Info {
@@ -12,21 +15,39 @@
   p {
     width: 350px;
   }
+  @media only screen and (max-width: 945px) {
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+    p {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 0 3rem 0;
+    }
+  }
 }
 
 .DribbbleImages {
   display: flex;
   flex-flow: nowrap;
-  flex-shrink: 2;
+  @media only screen and (max-width: 945px) {
+    margin: 0 auto;
+  }
 }
 .Featured {
   margin: 0.5rem;
-  flex-shrink: 2;
+  flex: 1 2 auto;
+  @media only screen and (max-width: 945px) {
+    width: 55vw;
+  }
 }
 .ImageColumn {
   display: flex;
   flex-direction: column;
-  width: 351px;
+  width: 27vw;
+  max-width: 227px;
   img {
     margin: 0.5rem 0.6rem;
   }

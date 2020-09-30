@@ -34,13 +34,19 @@
     flex-grow: 1;
     text-align: right;
     font-weight: 100;
-    a {
+    button {
+      font-family: var(--font-quaternary);
+      font-size: var(--text-sm);
+      background-color: transparent;
+      border: none;
       padding: 0 0.85rem;
       color: var(--softWhite);
       text-decoration: none;
+      transition: 0.2s all ease-in;
       opacity: 0.4;
       &:hover {
         opacity: 1;
+        transition: 0.2s all ease-in;
         color: var(--flatRed);
       }
     }

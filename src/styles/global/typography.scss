@@ -22,7 +22,7 @@
       var(--text-scale-ratio) * var(--text-scale-ratio)
   );
   --text-xxxl: calc(
-    1.75rem * var(--text-scale-ratio) * var(--text-scale-ratio) *
+    2.5rem * var(--text-scale-ratio) * var(--text-scale-ratio) *
       var(--text-scale-ratio) * var(--text-scale-ratio)
   );
 }
@@ -59,7 +59,7 @@ h2,
 
 h3,
 .text--lg {
-  font-size: var(--text-xl);
+  font-size: var(--text-xxl);
 }
 
 h4,

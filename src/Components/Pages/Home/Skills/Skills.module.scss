@@ -1,8 +1,18 @@
 .Skills {
-  padding-top: 15rem;
-  margin: 0 0 10rem 0;
+  padding-top: 20rem;
+  margin: 0 0 15vh 0;
+  h2 {
+    @media only screen and (max-width: 640px) {
+      text-align: center;
+    }
+  }
   p {
     margin: 2rem 0 4rem 0;
+    @media only screen and (max-width: 640px) {
+      width: 55ch;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
   ul {
     display: flex;
@@ -13,6 +23,10 @@
       font-weight: bold;
       flex: 1 0 21%;
       margin: 0.75rem 0;
+      @media only screen and (max-width: 640px) {
+        flex: 1 0 41%;
+        text-align: center;
+      }
       svg {
         vertical-align: -2px;
         color: #c6c6c6;

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const ProjectGallery = () => {
   return (
-    <div className={styles.Projects}>
+    <div className={styles.Projects} id="projects">
       <h2>What I've been working on</h2>
       <div className={styles.ProjectGallery}>
         <div>

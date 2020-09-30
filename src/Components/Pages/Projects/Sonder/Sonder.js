@@ -1,7 +1,17 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 const Sonder = (params) => {
-  return <div>Sonder loaded</div>;
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <div>Sonder loaded</div>
+    </motion.div>
+  );
 };
 
 export default Sonder;
