@@ -1,0 +1,10 @@
+.row {
+  flex-basis: 100%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+  p {
+    padding: 0.5rem 0;
+  }
+}
