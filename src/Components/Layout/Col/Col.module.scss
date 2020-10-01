@@ -1,0 +1,12 @@
+.col {
+  flex: 1 1 0;
+  min-width: 290px;
+  padding: 0 0 1.25rem 0;
+  margin: 0 0 2rem 0;
+  @media only screen and (max-width: 660px) {
+    // border-bottom: 1px solid rgba(125, 125, 125, 0.4s);
+    a span {
+      font-size: 1.25em;
+    }
+  }
+}

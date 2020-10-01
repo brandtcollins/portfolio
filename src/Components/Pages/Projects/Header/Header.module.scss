@@ -1,0 +1,17 @@
+.header {
+  padding: 10rem 0 0 0;
+  h1,
+  h2 {
+    color: var(--flatRed);
+  }
+  p {
+    width: 50%;
+  }
+  span {
+    color: var(--slateGray);
+  }
+  @media only screen and (max-width: 1050px) {
+    // border-bottom: 1px solid rgba(125, 125, 125, 0.4s);
+    margin-top: 120px;
+  }
+}

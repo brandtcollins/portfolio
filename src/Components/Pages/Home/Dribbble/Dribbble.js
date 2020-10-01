@@ -42,7 +42,7 @@ const Dribbble = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image link={dribbbleShots[0].images.hidpi} />
+              <Image link={[dribbbleShots[0].images.hidpi]} />
             </a>
           </div>
 
@@ -52,14 +52,14 @@ const Dribbble = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image link={dribbbleShots[1].images.hidpi} />
+              <Image link={[dribbbleShots[1].images.hidpi]} />
             </a>
             <a
               href={dribbbleShots[2].html_url}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image link={dribbbleShots[2].images.hidpi} />
+              <Image link={[dribbbleShots[2].images.hidpi]} />
             </a>
           </div>
         </div>

@@ -7,12 +7,12 @@ import Header from "../Header/Header";
 import ProjectDetails from "../ProjectDetails/ProjectDetails";
 import SingleImage from "../../../Layout/Image/Image";
 import Row from "../../../Layout/Row/Row";
-import styles from "./Sonder.module.scss";
+import styles from "./FeedMe.module.scss";
 import Footer from "../../../Footer/Footer";
 import { useLocation } from "react-router-dom";
 
-const Sonder = (props) => {
-  const project = data[0];
+const FeedMe = (props) => {
+  const project = data[1];
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -45,22 +45,15 @@ const Sonder = (props) => {
               <p>{project.goal}</p>
             </div>
           </Row>
-          <SingleImage link={project.images.slice(1, 2)} />
+          <div className={styles.GroupedImages}>
+            <SingleImage link={project.images.slice(1)} />
+          </div>
           <Row>
             <div className={styles.Top}>
               <h2>Lessons Learned</h2>
               {project.lessons}
             </div>
           </Row>
-          <Row>
-            <div className={styles.Bottom}>
-              <h2>Moving Forward</h2>
-              {project.future}
-            </div>
-          </Row>
-          <div className={styles.GroupedImages}>
-            <SingleImage link={project.images.slice(2)} />
-          </div>
         </Container>
       </Body>
       <Footer />
@@ -68,4 +61,4 @@ const Sonder = (props) => {
   );
 };
 
-export default Sonder;
+export default FeedMe;

@@ -10,11 +10,19 @@ const ProjectGallery = () => {
       <div className={styles.ProjectGallery}>
         <div>
           <NavLink to="/projects/Sonder">
-            <Image link="/images/ProjectScreenShots/Sonder/Sonder-Desktop.png" />
+            <Image
+              link={["/images/ProjectScreenShots/Sonder/Sonder-Desktop.png"]}
+            />
           </NavLink>
         </div>
         <div>
-          <Image link="/images/ProjectScreenShots/FeedMe/FeedMe_HomeScreen_dr.png" />
+          <NavLink to="/projects/FeedMe">
+            <Image
+              link={[
+                "/images/ProjectScreenShots/FeedMe/FeedMe_HomeScreen_dr.png",
+              ]}
+            />
+          </NavLink>
         </div>
       </div>
     </div>
