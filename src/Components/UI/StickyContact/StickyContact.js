@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState, useMemo } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import styles from "./StickyContact.module.scss";
 import { FiGithub, FiLinkedin, FiSend, FiFileText } from "react-icons/fi";
 import { motion } from "framer-motion";
@@ -7,10 +7,11 @@ import { ScrollContext } from "../../../Context/ScrollContext";
 const StickyContact = () => {
   const { scrollPosition } = useContext(ScrollContext);
   const [iconPositions, setIconPositions] = useState({
-    Github: null,
-    Linkedin: null,
-    Send: null,
-    File: null,
+    Loaded: false,
+    Github: 0,
+    Linkedin: 0,
+    Send: 0,
+    File: 0,
   });
 
   const GithubRef = useRef();
@@ -28,6 +29,12 @@ const StickyContact = () => {
         Send: SendRef.current.getBoundingClientRect().top,
         File: FileRef.current.getBoundingClientRect().top,
       });
+      if (!iconPositions.Loaded) {
+        setIconPositions({
+          ...iconPositions,
+          Loaded: true,
+        });
+      }
     }
   }, [scrollPosition]);
 

@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import styles from "./StickyNavHeader.module.scss";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import { ScrollContext } from "../../../Context/ScrollContext";
 
 const StickyNavHeader = () => {
+  const { scrollPosition } = useContext(ScrollContext);
+  const [headerPosition, setHeaderPosition] = useState(32);
+  const StickyNavHeaderRef = useRef();
+
+  useEffect(() => {
+    setHeaderPosition(StickyNavHeaderRef.current.getBoundingClientRect().top);
+  }, [scrollPosition, headerPosition]);
+
   const handleClick = (event) => {
     document
       .getElementById("projects")
@@ -19,15 +28,32 @@ const StickyNavHeader = () => {
       transition={{ duration: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className={styles.StickyNavHeader}>
-        <h5>
+      <div ref={StickyNavHeaderRef} className={styles.StickyNavHeader}>
+        <h5
+          className={
+            headerPosition > scrollPosition.body.top ? styles.Dark : null
+          }
+        >
           <NavLink to="/">
             bc<span>.</span>
           </NavLink>
         </h5>
         <nav>
-          <button onClick={handleClick}>projects</button>
-          <button>resumé</button>
+          <button
+            className={
+              headerPosition > scrollPosition.body.top ? styles.Dark : null
+            }
+            onClick={handleClick}
+          >
+            projects
+          </button>
+          <button
+            className={
+              headerPosition > scrollPosition.body.top ? styles.Dark : null
+            }
+          >
+            resumé
+          </button>
         </nav>
       </div>
     </motion.div>

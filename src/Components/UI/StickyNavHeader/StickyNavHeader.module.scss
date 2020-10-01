@@ -51,11 +51,10 @@
       }
     }
   }
-}
-
-.Dark {
-  color: var(--flatDarkBlue);
-  span {
-    color: var(--flatRed);
+  .Dark {
+    color: var(--flatDarkBlue);
+    a {
+      color: var(--flatDarkBlue);
+    }
   }
 }
