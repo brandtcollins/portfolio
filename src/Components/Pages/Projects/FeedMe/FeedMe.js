@@ -8,8 +8,8 @@ import ProjectDetails from "../ProjectDetails/ProjectDetails";
 import SingleImage from "../../../Layout/Image/Image";
 import Row from "../../../Layout/Row/Row";
 import styles from "./FeedMe.module.scss";
-import Footer from "../../../Footer/Footer";
 import { useLocation } from "react-router-dom";
+import Background from "../../../Layout/Backgrounds/BackgroundImage";
 
 const FeedMe = (props) => {
   const project = data[1];
@@ -56,7 +56,7 @@ const FeedMe = (props) => {
           </Row>
         </Container>
       </Body>
-      <Footer />
+      <Background />
     </motion.div>
   );
 };

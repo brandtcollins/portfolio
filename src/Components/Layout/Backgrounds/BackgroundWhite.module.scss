@@ -7,3 +7,32 @@
   top: 0;
   z-index: -10;
 }
+.Chevron {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  margin: 5rem 0 6px 0;
+  z-index: -1;
+  width: 100%;
+}
+.Chevron:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: var(--eggShellWhite);
+  transform: skew(0deg, 6deg);
+}
+.Chevron:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: var(--eggShellWhite);
+  transform: skew(0deg, -6deg);
+}

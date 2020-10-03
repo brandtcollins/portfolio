@@ -1,6 +1,6 @@
 .Background {
   height: 100vh;
-  background-color: var(--flatDarkBlue);
+  background-color: rgb(74, 74, 96);
   width: 100vw;
   width: 100vw;
   height: 100vh;
@@ -13,7 +13,8 @@
 .BackgroundImage {
   background-image: url("/images/lake-eola.jpeg");
   background-size: cover;
-  opacity: 25%;
+  mix-blend-mode: overlay;
+  opacity: 45%;
   position: absolute;
   width: 100vw;
   height: 100vh;

@@ -9,6 +9,7 @@ import SingleImage from "../../../Layout/Image/Image";
 import Row from "../../../Layout/Row/Row";
 import styles from "./Sonder.module.scss";
 import { useLocation } from "react-router-dom";
+import Background from "../../../Layout/Backgrounds/BackgroundImage";
 
 const Sonder = (props) => {
   const project = data[0];
@@ -62,6 +63,7 @@ const Sonder = (props) => {
           </div>
         </Container>
       </Body>
+      <Background />
     </motion.div>
   );
 };
