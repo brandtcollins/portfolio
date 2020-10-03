@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
 import styles from "./Hero.module.scss";
 import { motion } from "framer-motion";
+import { ScrollContext } from "../../../../Context/ScrollContext";
+import produce from "immer";
 
 const Hero = () => {
+  const { scrollPosition, updateScrollPosition } = useContext(ScrollContext);
+
+  useEffect(() => {
+    console.log(`Ran`);
+    updateScrollPosition(
+      produce(scrollPosition, (draft) => {
+        draft.body.top = null;
+      })
+    );
+    console.log(scrollPosition);
+  }, []);
+
   return (
     <motion.div
       className={styles.Hero}

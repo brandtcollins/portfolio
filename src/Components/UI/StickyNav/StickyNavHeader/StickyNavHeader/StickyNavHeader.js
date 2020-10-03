@@ -3,9 +3,10 @@ import styles from "./StickyNavHeader.module.scss";
 import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { ScrollContext } from "../../../../../Context/ScrollContext";
+import produce from "immer";
 
 const StickyNavHeader = () => {
-  const { scrollPosition } = useContext(ScrollContext);
+  const { scrollPosition, updateScrollPosition } = useContext(ScrollContext);
   const [headerPosition, setHeaderPosition] = useState(32);
   const StickyNavHeaderRef = useRef();
 

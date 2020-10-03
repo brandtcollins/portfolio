@@ -16,20 +16,19 @@ const Body = (props) => {
     const top = BodyRef.current.getBoundingClientRect().top;
     const bottom = BodyRef.current.getBoundingClientRect().bottom;
 
+    let bottomOfPage = false;
+
+    if (bottom + 100 < window.innerHeight) {
+      bottomOfPage = true;
+    }
+
     updateScrollPosition(
       produce(scrollPosition, (draft) => {
         draft.body.top = top;
-        draft.bottom = false;
+        draft.bottom = bottomOfPage;
       })
     );
-    // window.innerHeight + window.scrollY >= document.body.offsetHeight
-    if (bottom + 100 < window.innerHeight) {
-      updateScrollPosition(
-        produce(scrollPosition, (draft) => {
-          draft.bottom = true;
-        })
-      );
-    }
+    console.log(`Scroll: `, scrollPosition);
   }
 
   useEffect(() => {

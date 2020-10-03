@@ -9,7 +9,6 @@
   p {
     margin: 2rem 0 4rem 0;
     @media only screen and (max-width: 640px) {
-      width: 55ch;
       margin: 0 auto;
       text-align: center;
     }
@@ -23,7 +22,7 @@
       font-weight: bold;
       flex: 1 0 21%;
       margin: 0.75rem 0;
-      @media only screen and (max-width: 640px) {
+      @media only screen and (max-width: 782px) {
         flex: 1 0 41%;
         text-align: center;
       }
