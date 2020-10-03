@@ -14,23 +14,23 @@ const Body = (props) => {
 
   function logit() {
     const top = BodyRef.current.getBoundingClientRect().top;
+    const bottom = BodyRef.current.getBoundingClientRect().bottom;
 
     updateScrollPosition(
       produce(scrollPosition, (draft) => {
         draft.body.top = top;
+        draft.bottom = false;
       })
     );
+    // window.innerHeight + window.scrollY >= document.body.offsetHeight
+    if (bottom + 100 < window.innerHeight) {
+      updateScrollPosition(
+        produce(scrollPosition, (draft) => {
+          draft.bottom = true;
+        })
+      );
+    }
   }
-
-  // useEffect(() => {
-  //   if (location.pathname) {
-  //     background = <BackgroundChevron />;
-  //     console.log(background);
-  //   } else {
-  //     background = <BackgroundWhite />;
-  //     console.log(`two`);
-  //   }
-  // });
 
   useEffect(() => {
     function watchScroll() {

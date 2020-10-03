@@ -5,6 +5,7 @@
   width: 25px;
   bottom: 2rem;
   left: 16px;
+  transition: 0.2s all ease-in;
   svg {
     opacity: 0.4;
     padding: 20px 0;
@@ -22,5 +23,29 @@
 .Dark {
   svg {
     color: var(--flatDarkBlue);
+  }
+}
+
+.Hide {
+  z-index: 100;
+  position: fixed;
+  margin: 0 0 0 2rem;
+  width: 25px;
+  bottom: 2rem;
+  left: -36px;
+  opacity: 0;
+  transition: 0.2s all ease-in;
+
+  svg {
+    opacity: 0;
+    padding: 20px 0;
+    transition: 0.2s all ease-in;
+    font-size: 1.5rem;
+    color: var(--softWhite);
+
+    &:hover {
+      opacity: 1;
+      color: var(--flatRed);
+    }
   }
 }

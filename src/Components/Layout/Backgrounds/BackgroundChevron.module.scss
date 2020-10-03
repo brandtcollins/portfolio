@@ -2,13 +2,13 @@
   position: absolute;
   text-align: center;
   top: 0;
-  z-index: -10;
   height: 100%;
   margin: 5rem 0 6px 0;
+  z-index: -1;
   width: 100%;
 }
 .Chevron:before {
-  content: "";
+  content: " ";
   position: absolute;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@
   transform: skew(0deg, 6deg);
 }
 .Chevron:after {
-  content: "";
+  content: " ";
   position: absolute;
   top: 0;
   right: 0;

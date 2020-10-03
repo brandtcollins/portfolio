@@ -7,7 +7,17 @@
   color: var(--softWhite);
 }
 
-.StickyNavHeader {
+.StickyNavFooter {
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+  margin: 0 0 2rem 0;
+  color: var(--softWhite);
+}
+
+.Content {
   color: var(--softWhite);
   display: flex;
   margin: 2rem 2rem 0 2rem;

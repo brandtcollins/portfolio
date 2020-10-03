@@ -5,6 +5,7 @@ const initialState = {
     top: null,
     bottom: null,
   },
+  bottom: false,
 };
 
 export const ScrollContext = createContext(initialState);

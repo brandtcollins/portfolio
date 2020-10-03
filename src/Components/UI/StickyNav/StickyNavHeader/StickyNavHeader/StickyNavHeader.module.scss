@@ -1,0 +1,60 @@
+.StickyNav {
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  color: var(--softWhite);
+}
+
+.Content {
+  color: var(--softWhite);
+  display: flex;
+  margin: 2rem 2rem 0 2rem;
+  font-family: var(--font-quaternary);
+  h5 {
+    font-weight: 100;
+    color: var(--softWhite);
+    font-size: var(--text-xl);
+    opacity: 0.4;
+    transition: 0.2s all ease-in;
+    a {
+      color: var(--softWhite);
+      text-decoration: none;
+    }
+    &:hover {
+      opacity: 1;
+      transition: 0.2s all ease-in;
+    }
+  }
+  span {
+    color: var(--flatRed);
+  }
+  nav {
+    flex-grow: 1;
+    text-align: right;
+    font-weight: 100;
+    button {
+      font-family: var(--font-quaternary);
+      font-size: var(--text-sm);
+      background-color: transparent;
+      border: none;
+      padding: 0 0.85rem;
+      color: var(--softWhite);
+      text-decoration: none;
+      transition: 0.2s all ease-in;
+      opacity: 0.4;
+      &:hover {
+        opacity: 1;
+        transition: 0.2s all ease-in;
+        color: var(--flatRed);
+      }
+    }
+  }
+  .Dark {
+    color: var(--flatDarkBlue);
+    a {
+      color: var(--flatDarkBlue);
+    }
+  }
+}

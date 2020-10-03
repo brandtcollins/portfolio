@@ -31,8 +31,8 @@ const Home = () => {
           <ProjectGallery />
           <Dribbble />
         </Container>
-        <Background />
       </Body>
+      <Background />
     </motion.div>
   );
 };

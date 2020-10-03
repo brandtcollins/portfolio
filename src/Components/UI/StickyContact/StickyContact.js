@@ -40,7 +40,7 @@ const StickyContact = () => {
 
   return (
     <motion.div
-      className={styles.Contact}
+      className={scrollPosition.bottom ? styles.Hide : styles.Contact}
       key="modal"
       ref={StickyContactRef}
       initial={{ opacity: 0, y: 150 }}
