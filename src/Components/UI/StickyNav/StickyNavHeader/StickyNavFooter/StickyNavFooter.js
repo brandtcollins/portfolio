@@ -4,12 +4,6 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const StickyNavFooter = (params) => {
-  const handleClick = (event) => {
-    document
-      .getElementById("projects")
-      .scrollIntoView({ block: "start", behavior: "smooth" });
-  };
-
   return (
     <motion.div
       className={styles.StickyNavFooter}
@@ -47,7 +41,7 @@ const StickyNavFooter = (params) => {
           >
             linkedin
           </a>
-          <a>resumé</a>
+          <a href="/">resumé</a>
         </nav>
       </div>
     </motion.div>

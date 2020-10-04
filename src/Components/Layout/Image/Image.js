@@ -1,20 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Image.module.scss";
-import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 
 const { v4: uuidv4 } = require("uuid");
 
 const Image = (props) => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   const { link } = props;
   return (
     <>
       {link.map((link) => (
         <motion.div
-          whileHover={{ scale: 1.0 }}
-          transition={{ ease: "easeOut", duration: 0.25 }}
-          key={uuidv4()}
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={{
+            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, x: 300 },
+          }}
         >
-          <img src={link} className={styles.singleImage} alt=""></img>
+          <img
+            src={link}
+            key={uuidv4()}
+            className={styles.singleImage}
+            alt=""
+          ></img>
         </motion.div>
       ))}
     </>
