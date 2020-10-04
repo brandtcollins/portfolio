@@ -10,7 +10,7 @@ const Image = (props) => {
     <>
       {link.map((link) => (
         <motion.div
-          whileHover={{ scale: 1.02 }}
+          whileHover={{ scale: 1.0 }}
           transition={{ ease: "easeOut", duration: 0.25 }}
           key={uuidv4()}
         >

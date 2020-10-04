@@ -58,7 +58,13 @@ const StickyContact = () => {
             iconPositions.Github > scrollPosition.body.top ? styles.Dark : null
           }
         >
-          <FiGithub />
+          <a
+            href="https://github.com/brandtcollins"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiGithub />
+          </a>
         </div>
       </motion.div>
       <motion.div
@@ -73,7 +79,13 @@ const StickyContact = () => {
               : null
           }
         >
-          <FiLinkedin />
+          <a
+            href="https://www.linkedin.com/in/brandt-collins-44353989/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiLinkedin />
+          </a>
         </div>
       </motion.div>
       <motion.div
@@ -86,7 +98,13 @@ const StickyContact = () => {
             iconPositions.Send > scrollPosition.body.top ? styles.Dark : null
           }
         >
-          <FiSend />
+          <a
+            href="mailto:hello@brandtcollins.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiSend />
+          </a>
         </div>
       </motion.div>{" "}
       <motion.div

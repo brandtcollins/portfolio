@@ -26,10 +26,28 @@ const StickyNavFooter = (params) => {
           </NavLink>
         </h5>
         <nav>
-          <button onClick={handleClick}>hello@brandtcollins.com</button>
-          <button>github</button>
-          <button>linkedin</button>
-          <button>resumé</button>
+          <a
+            href="mailto:hello@brandtcollins.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hello@brandtcollins.com
+          </a>
+          <a
+            href="https://github.com/brandtcollins"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github
+          </a>
+          <a
+            href="https://www.linkedin.com/in/brandt-collins-44353989/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin
+          </a>
+          <a>resumé</a>
         </nav>
       </div>
     </motion.div>
