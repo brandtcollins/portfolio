@@ -34,6 +34,7 @@
   flex-flow: nowrap;
   @media only screen and (max-width: 945px) {
     margin: 0 auto;
+    flex-wrap: wrap;
   }
 }
 .Featured {
@@ -50,5 +51,13 @@
   max-width: 227px;
   img {
     margin: 0.5rem 0.6rem;
+  }
+  @media only screen and (max-width: 945px) {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    img {
+      width: 95%;
+    }
   }
 }
