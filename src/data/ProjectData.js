@@ -8,7 +8,7 @@ const projects = [
     subhead: "A Note Taking App",
     teaser: "Sonder is a note taking app built using React.",
     desc:
-      "Sonder is a note taking app built with React after learning the basics of the framework. A note taking app felt like the perfect way to familarize myself with the design common with React.",
+      "Sonder is a note taking app I built with React. A note taking app felt like the perfect way to familarize myself with the design patterns common with React but also an application in which I could make fairly feature rich.",
     stack: "React, React Bootstrap, Firebase",
     code: "https://github.com/brandtcollins/Sonder",
     demo: "https://sonder-581b0.web.app/",
@@ -23,18 +23,21 @@ const projects = [
     lessons: (
       <>
         <p>
-          When I started building Sonder, I had a solid grasp of useState but
-          I wanted to learn other ways to manage and change state. Sonder
-          showed me the strength of the useContext/useReducer pairing and how these two hooks can help
-          manage state across components at different layers. Also, I really enjoy that instead of creating functions
-          to create notes, delete notes, edit notes, change categories etc. I could use the useReducer hook to dispatch case statements for each action.
+          When I started building Sonder, I had a solid grasp of useState but I
+          wanted to learn other ways to manage and change state. Sonder showed
+          me the strength of the useContext/useReducer pairing and how these two
+          hooks can help manage state across components at different depths.
+          Also, I really enjoyed that instead of creating functions to create
+          notes, delete notes, edit notes, change categories etc. I could use
+          the useReducer hook to dispatch case statements for each action with
+          an associated payload.
         </p>
         <p>
           I also learned that, while Bootstrap is great, there is a certain
           level of bloat that it brings to your code due to needing to pass
           parameters as objects within props. This can be handy to quickly style
           and customize Bootstrap's components but it can muck up the
-          readability of your app while doing so. 
+          readability of your app while doing so.
         </p>
       </>
     ),
@@ -72,12 +75,13 @@ const projects = [
           first, I planned on solely using the Zomato API but in practice I
           discovered that it was not as reliable as I'd thought. Specifically,
           how the API handles a city's search wasn't ideal. If a user entered in
-          a city it would return any and all results including the user's search term, I
-          realized that Zomato was much more accurate if it received the
-          geocordinates of the user's search instead of what ever the user may have entered. After discovering this, I deciced
-          that I would utilize a second API (OpenCage) to locate the user's
-          entered string to return longitude & latitude values that would then
-          be passed over to Zomato for accurate restaurant information.
+          a city it would return any and all results including the user's search
+          term, I realized that Zomato was much more accurate if it received the
+          geocordinates of the user's search instead of what ever the user may
+          have entered. After discovering this, I deciced that I would utilize a
+          second API (OpenCage) to locate the user's entered string to return
+          longitude & latitude values that would then be passed over to Zomato
+          for accurate restaurant information.
         </p>
         <p>
           The second lesson was the importance of data. At face value, I really
