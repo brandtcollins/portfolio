@@ -3,20 +3,14 @@ import styles from "./StickyNavHeader.module.scss";
 import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { ScrollContext } from "../../../../../Context/ScrollContext";
-import produce from "immer";
 
 const StickyNavHeader = () => {
-  const { scrollPosition, updateScrollPosition } = useContext(ScrollContext);
+  const { scrollPosition } = useContext(ScrollContext);
   const [headerPosition, setHeaderPosition] = useState(32);
   const StickyNavHeaderRef = useRef();
 
   useEffect(() => {
     setHeaderPosition(StickyNavHeaderRef.current.getBoundingClientRect().top);
-    window.onscroll = function (ev) {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        // console.log(`bottom`);
-      }
-    };
   }, [scrollPosition, headerPosition]);
 
   const handleClick = (event) => {

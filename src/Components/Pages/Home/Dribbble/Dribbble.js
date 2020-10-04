@@ -31,8 +31,8 @@ const Dribbble = () => {
         <div className={styles.Info}>
           <h2>See my recent work on dribbble</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
-            urna at mattis auctor nec mauris posuere.
+            I like to stay busy and try to have a project in the works, check
+            out my dribbble for a peak at the newest things I've worked on.
           </p>
         </div>
         <div className={styles.DribbbleImages}>

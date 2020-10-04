@@ -7,10 +7,8 @@ const Skills = () => {
     <div className={styles.Skills}>
       <h2>My skills</h2>
       <p>
-        This will be a new sectionThis will be a new sectionThis will be a new
-        sectionThis will be a new sectionThis will be a new sectionThis will be
-        a new sectionThis will be a new sectionThis will be a new sectionThis
-        will be a new sectionThis will be a new section
+        Always studying to keep up on what's new, I use these tools to create
+        and improve online experiences.
       </p>
       <ul>
         <li>

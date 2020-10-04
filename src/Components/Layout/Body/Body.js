@@ -28,7 +28,6 @@ const Body = (props) => {
         draft.bottom = bottomOfPage;
       })
     );
-    console.log(`Scroll: `, scrollPosition);
   }
 
   useEffect(() => {

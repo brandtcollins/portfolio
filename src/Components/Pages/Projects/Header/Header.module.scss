@@ -5,9 +5,16 @@
     color: var(--flatRed);
   }
   p {
-    width: 50%;
+    max-width: 50%;
   }
   span {
     color: var(--slateGray);
+  }
+  @media only screen and (max-width: 760px) {
+    text-align: center;
+    p {
+      max-width: 100%;
+      text-align: center;
+    }
   }
 }
