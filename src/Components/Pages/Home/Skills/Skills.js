@@ -7,8 +7,9 @@ const Skills = () => {
     <div className={styles.Skills}>
       <h2>My skills</h2>
       <p>
-        Always studying to keep up on what's new, I use these tools to create
-        and improve online experiences.
+        Always studying and keeping up on what's new, I use these tools to help
+        people and companies improve their online presence while providing
+        optimal user experience.
       </p>
       <ul>
         <li>
