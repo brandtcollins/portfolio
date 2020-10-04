@@ -33,11 +33,11 @@ const projects = [
           an associated payload.
         </p>
         <p>
-          I also learned that, while Bootstrap is great, there is a certain
-          level of bloat that it brings to your code due to needing to pass
-          parameters as objects within props. This can be handy to quickly style
-          and customize Bootstrap's components but it can muck up the
-          readability of your app while doing so.
+          I also learned that while Bootstrap is great, there is a certain level
+          of bloat that it brings to your code due to needing to pass parameters
+          as objects within props. This can be handy to quickly style and
+          customize Bootstrap's components but it can muck up the readability of
+          your app while doing so.
         </p>
       </>
     ),
@@ -57,7 +57,7 @@ const projects = [
     subhead: "Restaurant Selector",
     teaser: "Enter your location and receive restaurant locations near you.",
     desc:
-      "FeedMe is a React application built to help select a restaurant or bar from a nearby location. I built this app from scratch after finding the Zomato API. I knew I wanted to practice receiving and manipulating data from an external source so this was a fun app to build.",
+      "FeedMe is a application built to help select a restaurant or bar from a nearby location. I built this app from scratch after finding the Zomato API. I knew I wanted to practice receiving and manipulating data from an external source so this was a fun app to build.",
     stack: `React, Firebase`,
     code: "https://github.com/brandtcollins/FeedMe",
     demo: "https://feedme-813b6.web.app/",
