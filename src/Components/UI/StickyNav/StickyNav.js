@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import StickyNavHeader from "./StickyNavHeader/StickyNavHeader";
-import { ScrollContext } from "../../../../Context/ScrollContext";
+import { ScrollContext } from "../../../Context/ScrollContext";
 import StickyNavFooter from "./StickyNavFooter/StickyNavFooter";
 
 const StickyNav = () => {

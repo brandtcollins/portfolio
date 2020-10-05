@@ -41,7 +41,12 @@ const StickyNavFooter = (params) => {
           >
             linkedin
           </a>
-          <a href="/">resumé</a>
+          <a
+            href="/BrandtCollins_Designer_FrontEndDeveloper_Resume.pdf"
+            target="_blank"
+          >
+            resumé
+          </a>
         </nav>
       </div>
     </motion.div>

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/global/main.scss";
-import App from "./Containers/App";
+import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import ScrollContextProvider from "./Context/ScrollContext";
 

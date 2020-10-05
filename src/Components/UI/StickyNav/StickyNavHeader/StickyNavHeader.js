@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState, useRef } from "react";
 import styles from "./StickyNavHeader.module.scss";
 import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { ScrollContext } from "../../../../../Context/ScrollContext";
+import { ScrollContext } from "../../../../Context/ScrollContext";
 
 const StickyNavHeader = () => {
   const { scrollPosition } = useContext(ScrollContext);
@@ -46,13 +46,18 @@ const StickyNavHeader = () => {
             >
               projects
             </button>
-            <button
-              className={
-                headerPosition > scrollPosition.body.top ? styles.Dark : null
-              }
+            <a
+              href="/BrandtCollins_Designer_FrontEndDeveloper_Resume.pdf"
+              target="_blank"
             >
-              resumé
-            </button>
+              <button
+                className={
+                  headerPosition > scrollPosition.body.top ? styles.Dark : null
+                }
+              >
+                resumé
+              </button>
+            </a>
           </nav>
         </div>
       </motion.div>
