@@ -10,7 +10,10 @@ button {
 }
 
 .Footer {
-  height: 350px;
+  height: 200px;
+  @media only screen and (max-width: 475px) {
+    height: 350px;
+  }
 }
 
 .Top {

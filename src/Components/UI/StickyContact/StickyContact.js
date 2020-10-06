@@ -118,7 +118,12 @@ const StickyContact = () => {
             iconPositions.File > scrollPosition.body.top ? styles.Dark : null
           }
         >
-          <FiFileText />
+          <a
+            href="/BrandtCollins_Designer_FrontEndDeveloper_Resume.pdf"
+            target="_blank"
+          >
+            <FiFileText />
+          </a>
         </div>
       </motion.div>
     </motion.div>
