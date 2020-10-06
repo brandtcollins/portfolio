@@ -20,4 +20,13 @@
     line-height: 2.25rem;
     text-align: center;
   }
+  @media only screen and (max-width: 375px) {
+    h1 {
+    }
+    p {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      max-width: 90%;
+    }
+  }
 }

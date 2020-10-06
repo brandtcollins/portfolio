@@ -48,6 +48,9 @@ h1,
   font-family: var(--font-primary);
   font-size: var(--text-xxxl);
   letter-spacing: -0.075rem;
+  @media only screen and (max-width: 375px) {
+    font-size: var(--text-xxl);
+  }
 }
 
 h2,
@@ -55,11 +58,17 @@ h2,
   font-size: var(--text-xxl);
   font-family: var(--font-primary);
   margin: 0 0 var(--space-md) 0;
+  @media only screen and (max-width: 375px) {
+    font-size: var(--text-xl);
+  }
 }
 
 h3,
 .text--lg {
   font-size: var(--text-xxl);
+  @media only screen and (max-width: 375px) {
+    font-size: var(--text-xl);
+  }
 }
 
 h4,

@@ -4,14 +4,13 @@ button {
   color: var(--eggshellWhite);
   outline: none;
   cursor: pointer;
-
-  ::visited {
+  &:visited {
     outline: none;
   }
 }
 
 .Footer {
-  height: 300px;
+  height: 350px;
 }
 
 .Top {
