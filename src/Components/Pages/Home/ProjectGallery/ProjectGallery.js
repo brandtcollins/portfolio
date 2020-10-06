@@ -14,6 +14,8 @@ const ProjectGallery = () => {
               link={["/images/ProjectScreenShots/Sonder/Sonder-Desktop.png"]}
             />
           </NavLink>
+          <h3>Sonder</h3>
+          <p>A note taking app built with React</p>
         </div>
         <div>
           <NavLink to="/projects/FeedMe">
@@ -23,6 +25,8 @@ const ProjectGallery = () => {
               ]}
             />
           </NavLink>
+          <h3>FeedMe</h3>
+          <p>A restaurant locator to give you ideas for food near you.</p>
         </div>
       </div>
     </div>

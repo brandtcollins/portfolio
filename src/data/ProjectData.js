@@ -8,7 +8,7 @@ const projects = [
     subhead: "A Note Taking App",
     teaser: "Sonder is a note taking app built using React.",
     desc:
-      "Sonder is a note taking app I built with React. A note taking app felt like the perfect way to familarize myself with the design patterns common with React but also an application in which I could make fairly feature rich.",
+      "Sonder is a note taking app I built with React. A note taking app felt like the perfect way to familiarize myself with the design patterns common with React but also an application in which I could make fairly feature rich.",
     stack: "React, React Bootstrap, Firebase",
     code: "https://github.com/brandtcollins/Sonder",
     demo: "https://sonder-581b0.web.app/",
@@ -19,7 +19,7 @@ const projects = [
       "/images/ProjectScreenShots/Sonder/Signin.png",
     ],
     goal:
-      "By design, this project will forever be in progress. Sonder is an app that I plan to take learnings and ideas that I come across and apply them to a personal project of my own. Currently, my goals with Sonder are to take a deeper look at state management and the role it plays with deep componenets. I also wanted to use a CSS framework that I was already familiar with (Bootstrap) and understand how it works with React.",
+      "By design, this project will forever be in progress. Sonder is an app that I plan to take learnings and ideas that I come across and apply them to a personal project of my own. Currently, my goals with Sonder are to take a deeper look at state management and the role it plays with deep components. I also wanted to use a CSS framework that I was already familiar with (Bootstrap) and understand how it works with React.",
     lessons: (
       <>
         <p>
@@ -36,8 +36,8 @@ const projects = [
           I also learned that while Bootstrap is great, there is a certain level
           of bloat that it brings to your code due to needing to pass parameters
           as objects within props. This can be handy to quickly style and
-          customize Bootstrap's components but it can muck up the readability of
-          your app while doing so.
+          customize Bootstrap's components, but it can muck up the readability
+          of your app while doing so.
         </p>
       </>
     ),
@@ -57,7 +57,7 @@ const projects = [
     subhead: "Restaurant Selector",
     teaser: "Enter your location and receive restaurant locations near you.",
     desc:
-      "FeedMe is a application built to help select a restaurant or bar from a nearby location. I built this app from scratch after finding the Zomato API. I knew I wanted to practice receiving and manipulating data from an external source so this was a fun app to build.",
+      "FeedMe is an application built to help select a restaurant or bar from a nearby location. I built this app from scratch after finding the Zomato API. I knew I wanted to practice receiving and manipulating data from an external source so this was a fun app to build.",
     stack: `React, Firebase`,
     code: "https://github.com/brandtcollins/FeedMe",
     demo: "https://feedme-813b6.web.app/",
@@ -74,29 +74,29 @@ const projects = [
           There are several lessons I've learned while building this App. At
           first, I planned on solely using the Zomato API but in practice I
           discovered that it was not as reliable as I'd thought. Specifically,
-          how the API handles a city's search wasn't ideal. If a user entered in
-          a city it would return any and all results including the user's search
-          term, I realized that Zomato was much more accurate if it received the
-          geocordinates of the user's search instead of what ever the user may
-          have entered. After discovering this, I deciced that I would utilize a
-          second API (OpenCage) to locate the user's entered string to return
-          longitude & latitude values that would then be passed over to Zomato
-          for accurate restaurant information.
+          how the API handles a search by a city's name wasn't ideal. If a user
+          entered in a city it would return any and all results that included
+          the user's search string, I realized that Zomato was much more
+          accurate if it received the coordinates of the user's search instead
+          of what ever the user may have entered. After discovering this, I
+          decided that I would utilize a second API (OpenCage) to locate the
+          user's entered string to return longitude & latitude values that would
+          then be passed over to Zomato for accurate restaurant information.
         </p>
         <p>
           The second lesson was the importance of data. At face value, I really
           like the Zomato API. It looked like you could simply enter in your
           search criteria and receive information on restaurants! It sounds
-          great at first but after building the app and looking at the data that
-          I was receiving, most of it was out dated. Local restaurants that are
-          permenantly closed are still listed, as well as restaurants
-          inaccurately described (Ex: Nightclubs described as restaurants when
-          they do not serve food).
+          great at first, but after building the app and looking at the data
+          that I was receiving, most of it was outdated. Local restaurants that
+          are permanently closed are still listed as results, as well as
+          restaurants inaccurately described (Ex: Nightclubs described as
+          restaurants when they do not serve food).
         </p>
         <p>
           In the end, FeedMe was a great learning tool in understanding how to
           retrieve data from multiple sources and store it in state to
-          manipluate through a component tree.
+          manipulate through a component tree.
         </p>
       </>
     ),

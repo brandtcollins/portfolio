@@ -26,7 +26,7 @@ const Skills = () => {
         </li>
         <li>
           <BiRadioCircle />
-          SASS
+          Sass
         </li>
         <li>
           <BiRadioCircle />
