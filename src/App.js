@@ -7,12 +7,14 @@ import FeedMe from "./Components/Pages/Projects/FeedMe/FeedMe";
 import Footer from "./Components/Layout/Footer/Footer";
 import StickyContact from "./Components/UI/StickyContact/StickyContact";
 import StickyNav from "./Components/UI/StickyNav/StickyNav";
+import Kismit from "./Components/Pages/Projects/Kismit/Kismit";
 
 function App() {
   return (
     <BrowserRouter>
       <Route path="/" component={Home} exact />
       <Route path="/projects/Sonder" component={Sonder} />
+      <Route path="/projects/Kismit" component={Kismit} />
       <Route path="/projects/FeedMe" component={FeedMe} />
       <StickyNav />
       <StickyContact />

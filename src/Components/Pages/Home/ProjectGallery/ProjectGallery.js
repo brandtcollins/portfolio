@@ -9,6 +9,17 @@ const ProjectGallery = () => {
       <h2>What I've been working on</h2>
       <div className={styles.ProjectGallery}>
         <div>
+          <NavLink to="/projects/Kismit">
+            <Image
+              link={[
+                "/images/ProjectScreenShots/Kismit/LandingPage_DesktopMobile.png",
+              ]}
+            />
+          </NavLink>
+          <h3>Kismit</h3>
+          <p>Small Business Web Design & Development</p>
+        </div>
+        <div>
           <NavLink to="/projects/Sonder">
             <Image
               link={["/images/ProjectScreenShots/Sonder/Sonder-Desktop.png"]}
